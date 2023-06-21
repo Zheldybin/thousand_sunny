@@ -25,12 +25,6 @@ body {
   --green-grad: linear-gradient(156.14deg, #BFF0DD 12.18%, #57D2A3 87.99%);
 }
 
-.dfgfgfdhghdfgh {
-  margin-top: 10rem;
-  background: tomato;
-  height: 300px;
-}
-
 a {
   text-decoration: none;
   color: inherit;
@@ -52,7 +46,7 @@ a {
 }
 
 .container {
-  width: 112rem;
+  max-width: 112rem;
   margin: 0 auto;
 }
 
@@ -65,7 +59,7 @@ h2 {
 
 /* --------------------- header --------------------- */
 .header__container {
-  width: 122rem;
+  max-width: 122rem;
   margin: 0 auto;
 }
 
@@ -122,7 +116,7 @@ h2 {
 
 /* --------------------- explore and travel --------------------- */
 .explore__container {
-  width: 130rem;
+  max-width: 130rem;
   margin: 0 auto;
   position: relative;
   left: 4.4rem;
@@ -133,6 +127,7 @@ h2 {
   justify-content: space-between;
   align-items: center;
   margin-top: 7rem;
+  position: relative;
 }
 
 h1 {
@@ -141,6 +136,7 @@ h1 {
   font-weight: 700;
   font-size: 6.4rem;
   line-height: 8rem;
+  width: 80%;
 }
 
 .explore__form legend {
@@ -204,9 +200,9 @@ form button {
   font-size: 17px;
 }
 
-/* --------------------- new-way --------------------- */
+/* --------------------- info --------------------- */
 .info__container {
-  width: 124rem;
+  max-width: 124rem;
   margin: 0 auto;
   position: relative;
   left: -4.5rem;
@@ -219,6 +215,7 @@ form button {
   margin-top: 28rem;
   -moz-column-gap: 10rem;
        column-gap: 10rem;
+  position: relative;
 }
 
 .info__wrapper p {
@@ -240,6 +237,10 @@ form button {
 }
 
 /* --------------------- featured --------------------- */
+.featured__wrapper {
+  position: relative;
+}
+
 .featured__title {
   display: flex;
   justify-content: space-between;
@@ -252,6 +253,7 @@ form button {
   font-size: 1.7rem;
   color: var(--orange);
   position: relative;
+  right: 2rem;
 }
 
 .view::after {
@@ -312,6 +314,7 @@ form button {
 /* --------------------- testimonials --------------------- */
 .testimonials__wrapper {
   margin-top: 25rem;
+  position: relative;
 }
 
 .testimonials__descr__wrapper {
@@ -386,12 +389,12 @@ form button {
 .dot__back::after {
   content: "";
   position: absolute;
-  width: 0.7rem;
-  height: 0.7rem;
+  top: 38%;
+  left: 42%;
+  width: 0.8rem;
+  height: 0.8rem;
   border: 0.2rem solid #D7D7D7;
   border-width: 0.2rem 0 0 0.2rem;
-  top: 1.4rem;
-  left: 1.5rem;
   transform: rotate(-45deg);
 }
 
@@ -402,12 +405,12 @@ form button {
 .dot__next::after {
   content: "";
   position: absolute;
-  width: 0.7rem;
-  height: 0.7rem;
+  top: 38%;
+  left: 34%;
+  width: 0.8rem;
+  height: 0.8rem;
   border: 0.2rem solid #D7D7D7;
   border-width: 0.2rem 0 0 0.2rem;
-  top: 1.4rem;
-  left: 1.2rem;
   transform: rotate(135deg);
 }
 
@@ -415,6 +418,230 @@ form button {
   border: 0.2rem solid #000000;
 }
 
-.dot__next::after {
+.dot__back:hover::after {
   border-color: #000000;
+}
+
+.dot__next:hover::after {
+  border-color: #000000;
+}
+
+/* --------------------- Trending stories --------------------- */
+.stories__wrapper {
+  margin-top: 27rem;
+}
+
+.stories__title {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.stories__cards__wrapper {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+  -moz-column-gap: 2rem;
+       column-gap: 2rem;
+  margin-top: 5.6rem;
+}
+
+.crop-container {
+  height: 230px;
+  overflow: hidden;
+}
+
+.stories__cards img {
+  border-radius: 1rem 1rem 0 0;
+}
+
+.stories__cards h4 {
+  font-weight: 700;
+  font-size: 1.9rem;
+  margin-top: 1.3rem;
+}
+
+.stories__cards p {
+  font-weight: 400;
+  font-size: 1.5rem;
+  color: #7D7987;
+  margin-top: 1.3rem;
+}
+
+.stories__cards a {
+  display: block;
+  font-weight: 600;
+  font-size: 1.5rem;
+  margin-top: 2.3rem;
+  color: var(--orange);
+}
+
+/* --------------------- footer --------------------- */
+.footer__container {
+  max-width: 122rem;
+  margin: 0 auto;
+  display: flex;
+  -moz-column-gap: 15rem;
+       column-gap: 15rem;
+  justify-content: space-between;
+  margin-top: 27rem;
+}
+
+.page-footer-logo-col {
+  width: 25%;
+}
+
+.copirait__text {
+  margin-top: 2.5rem;
+  font-family: "Muli";
+  font-weight: 300;
+  font-size: 1.8rem;
+}
+
+.copirait {
+  margin-top: 5.5rem;
+  font-family: "Muli";
+  font-weight: 300;
+  font-size: 1.7rem;
+}
+
+.page-footer-nav-col h6 {
+  font-family: "Muli";
+  font-weight: 700;
+  font-size: 1.9rem;
+  line-height: 6rem;
+}
+
+.page-footer-nav-col li {
+  font-family: "Muli";
+  font-weight: 300;
+  font-size: 1.8rem;
+  line-height: 3.8rem;
+  color: #848484;
+}
+
+.page-footer-nav-col li:hover {
+  text-decoration: underline;
+  color: var(--black);
+}
+
+.footer__container__social {
+  max-width: 122rem;
+  margin: 7.7rem auto 0 auto;
+}
+
+.social__wrapper {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  -moz-column-gap: 3.5rem;
+       column-gap: 3.5rem;
+  margin-top: 3rem;
+  padding-bottom: 10rem;
+}
+
+/* --------------------- bg --------------------- */
+.cirle {
+  position: absolute;
+  height: 2rem;
+  width: 2rem;
+}
+
+.cirle::after {
+  content: "";
+  position: absolute;
+  height: 2rem;
+  width: 2rem;
+  border-radius: 50%;
+  background: linear-gradient(156.14deg, #BFF0DD 12.18%, #57D2A3 87.99%);
+}
+
+.cirle::before {
+  content: "";
+  position: absolute;
+  height: 1rem;
+  width: 1rem;
+  border-radius: 50%;
+  background: white;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  z-index: 1;
+}
+
+.cirle-1 {
+  left: -10rem;
+  top: 30rem;
+}
+
+.cirle-2 {
+  left: 60rem;
+  top: 60rem;
+}
+
+.cirle-3 {
+  left: 110rem;
+  top: 35rem;
+}
+
+.cirle-4 {
+  left: 90rem;
+  top: -10rem;
+}
+
+.cirle-5 {
+  left: 50rem;
+  top: 50rem;
+}
+
+.cirle-6 {
+  left: 5rem;
+  top: 5rem;
+}
+
+.plus {
+  position: absolute;
+}
+
+.plus::after {
+  content: "";
+  width: 0.5rem;
+  height: 2rem;
+  background: #FDD08D;
+  position: absolute;
+}
+
+.plus::before {
+  content: "";
+  width: 0.5rem;
+  height: 2rem;
+  background: #FDD08D;
+  position: absolute;
+  transform: rotate(90deg);
+}
+
+.plus-1 {
+  left: 50rem;
+  top: 5rem;
+  transform: rotate(-10deg);
+}
+
+.plus-2 {
+  left: 75rem;
+  top: 0rem;
+}
+
+.plus-3 {
+  left: -10rem;
+  top: 30rem;
+}
+
+.plus-4 {
+  left: 120rem;
+  top: 5rem;
+}
+
+.plus-5 {
+  left: 40rem;
+  top: 40rem;
+  transform: rotate(10deg);
 }/*# sourceMappingURL=style.css.map */
