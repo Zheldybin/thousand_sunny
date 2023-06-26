@@ -1,0 +1,63 @@
+html {
+    font-family: "Inter", "Playfair Display", "Mulish", sans-serif;
+    font-size: 62.5%;
+  }
+      
+    
+  body {
+    background-color: var(--white);
+    font-family: "Inter";
+    font-size: 1.6rem;
+    font-weight: 400;
+    box-sizing: border-box;
+    color: var(--black);
+  }
+  
+  :root {
+  --grey-bg: #E5E5E5;
+  --green: #1ABE84;
+  --orange-light: #FDD08D;
+  --orange: #FB8F1D;
+  --white:#ffffff;
+  --black: #202336;
+  --dark-grey:#4A4C53;
+  --grey:#AFB0B9;
+  --grey-light:#B8BECD;
+  --green-grad:
+  }
+  
+  a {
+    text-decoration: none;
+    color: inherit;
+  }
+  
+  .btn {
+    padding: .8rem 4.6rem;
+    background-color: var(--orange);
+    border-radius: .8rem;
+    border: 1px solid var(--orange);
+    color: var(--white);
+    font-weight: 500;
+    font-size: 1.5rem;
+  }
+  
+  .btn:hover {
+    background-color: initial;
+    color: var(--orange);
+  }
+  
+  .container {
+    max-width: 112rem;
+    margin: 0 auto;
+
+    @include l-block {
+      padding: 20px;
+    }
+  }
+  
+  h2 {
+    font-family: 'Playfair Display';
+    font-weight: 700;
+    font-size: 3.6rem;
+    line-height: 5rem;
+  }

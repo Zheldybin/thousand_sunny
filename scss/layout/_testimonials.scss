@@ -1,0 +1,167 @@
+.testimonials__wrapper {
+    margin-top: 25rem;
+    position: relative;
+
+    @include md-block {
+      margin-top: 10rem;
+    }
+
+    @include mobileL-block {
+      text-align: center;
+    }
+  }
+  
+  .testimonials__descr__wrapper {
+    display: flex;
+    column-gap: 17rem;
+    align-items: center;
+    margin-top: 4rem;
+
+    @include md-block {
+      gap: 10rem;
+    }
+
+    @include ms-block {
+      gap: 2rem;
+    }
+
+    @include mobileL-block {
+      flex-direction: column;
+      text-align: center;
+    }
+  }
+  
+  .testimonials__descr {
+    width: 40%;
+
+    @include ms-block {
+      width: 80%;
+    }
+
+    @include mobileL-block {
+      width: 100%;
+    }
+  }
+  
+  .testimonials__descr__text {
+    margin-top: 3rem;
+    font-family: 'Muli';
+    font-weight: 400;
+    font-size: 2.4rem;
+    line-height: 3.6rem;
+  }
+  
+  .testimonials__descr__signed {
+    margin-top: 4rem;
+  }
+  
+  .testimonials__descr__signed h4 {
+    font-weight: 700;
+    font-size: 2.2rem;
+    line-height: 4.8rem;
+    color: #000000;
+  }
+  
+  .testimonials__descr__signed p {
+    font-weight: 400;
+    font-size: 1.8rem;
+    color: rgba(0, 0, 0, 0.85);
+  }
+
+  .testimonials__slider img {
+    width: 100%;
+  }
+
+  
+  
+  /* --------------------- testimonials slider --------------------- */
+  
+  .testimonials__slider {
+    position: relative;
+
+    @include ms-block {
+      position: static;
+    }
+
+    @include xs-block {
+      display: flex;
+      flex-direction: column;
+    }
+  }
+  
+  .testimonials__slider img {
+    z-index: 2;
+    position: relative;
+  }
+  
+  .testimonials__slider__dots {
+    position: absolute;
+    width: 132px;
+    height: 60px;
+    background: #FFFFFF;
+    border-radius: 16px 0px 0px 0px;
+    right: -1px;
+    bottom: -1px;
+    display: flex;
+    column-gap: 1rem;
+    justify-content: end;
+    align-items: end;
+    z-index: 10;
+
+    @include xs-block {
+      position: static;
+      width: 100%;
+      justify-content: center;
+    }
+  }
+  
+  .dot {
+    border: 2px solid #D7D7D7;
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+  }
+  
+  .dot__back {
+    position: relative;
+  }
+  
+  .dot__back::after {
+    content: "";
+    position: absolute;
+    top:calc(50% - 12%); 
+    left: calc(50% - 8%);
+    width: .8rem;
+    height: .8rem;
+    border: .2rem solid #D7D7D7;
+    border-width: .2rem 0 0 .2rem;
+    transform: rotate(-45deg)
+  }
+  
+  .dot__next {
+    position: relative;
+  }
+  
+  .dot__next::after {
+    content: "";
+    position: absolute;
+    top:calc(50% - 12%); 
+    left: calc(50% - 16%);
+    width: .8rem;
+    height: .8rem;
+    border: .2rem solid #D7D7D7;
+    border-width: .2rem 0 0 .2rem;
+    transform: rotate(135deg)
+  }
+  
+  .dot:hover {
+    border: .2rem solid #000000;
+  }
+  
+  .dot__back:hover::after {
+    border-color: #000000;
+  }
+  
+  .dot__next:hover::after {
+    border-color: #000000;
+  }

@@ -1,0 +1,114 @@
+/* --------------------- explore and travel --------------------- */
+
+.explore__container {
+    max-width: 130rem;
+    margin: 0 auto;
+    position: relative;
+    left: 4.4rem;
+  
+    @include lg-block {
+      padding: 20px;
+      left: 0;
+    }
+  }
+  
+  .explore__wrapper {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 7rem;
+    position: relative;
+
+    @include ms-block {
+      flex-direction: column-reverse;
+      text-align: center;
+    }
+  }
+  
+  h1 {
+    font-family: 'Playfair Display';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 6.4rem;
+    line-height: 8rem;
+    width: 80%;
+
+    @include ms-block {
+      width: 100%;
+      margin-top: 3rem;
+    }
+  }
+  
+  .explore__form legend {
+    font-weight: 600;
+    font-size: 2.2rem;
+    line-height: 2.7rem;
+    margin-top: 7.5rem;
+  }
+  
+  .explore__img img {
+    width: 100%;
+
+    @include ms-block {
+      width: 80%;
+    }
+  }
+  
+  .form__hr {
+    width: 3.2rem;
+    height: .2rem;
+    margin-top: 2rem;
+    background: #202336;
+    border-radius: .4rem;
+    display: block;
+
+    @include ms-block {
+      width: 100%;
+    }
+  }
+  
+  /* --------------------- form --------------------- */
+  
+  select {
+    font-size: 1.5rem;
+    padding: 1.5rem 1rem 1.5rem 1rem;
+    background: inherit;
+    color: var(--dark-grey); 
+    border: 0.8px solid #AFB0B9;
+    border-radius: 6px;
+    width: 100%;
+    cursor: pointer;
+  }
+  
+  
+  .select__wrapper {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    column-gap: 3rem;
+    row-gap: 3.5rem;
+    margin-top: 5rem;
+
+    @include xxs-block {
+      grid-template-columns: 1fr;
+    }
+  }
+  
+  .calendar {
+    font-size: 1.5rem;
+    padding: 1.5rem 1rem 1.5rem 1rem;
+    background: inherit;
+    color: var(--dark-grey);
+    appearance: none;  
+    border: 0.8px solid #AFB0B9;
+    border-radius: 6px;
+    width: 100%;
+    cursor: pointer;
+  }
+  
+  form button {
+    margin-top: 5rem;
+    font-family: 'Muli';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 17px;
+  }
