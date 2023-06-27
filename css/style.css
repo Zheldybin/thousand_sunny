@@ -1,3 +1,4 @@
+/* --------------------- base --------------------- */
 html {
   font-family: "Inter", "Playfair Display", "Mulish", sans-serif;
   font-size: 62.5%;
@@ -22,7 +23,6 @@ body {
   --dark-grey:#4A4C53;
   --grey:#AFB0B9;
   --grey-light:#B8BECD;
-  --green-grad: ;
 }
 
 a {
@@ -301,6 +301,7 @@ h2 {
   top: -5rem;
 }
 
+/* --------------------- header --------------------- */
 .header__container {
   max-width: 122rem;
   margin: 0 auto;
@@ -470,6 +471,37 @@ select {
   border-radius: 6px;
   width: 100%;
   cursor: pointer;
+  -webkit-appearance: none;
+     -moz-appearance: none;
+          appearance: none;
+}
+
+.select__container {
+  position: relative;
+}
+
+.custom-arrow {
+  display: block;
+  background: inherit;
+  height: 100%;
+  width: 6rem;
+  position: absolute;
+  top: 0;
+  right: 0;
+  pointer-events: none;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.custom-arrow::before {
+  content: "";
+  position: absolute;
+  width: 1rem;
+  height: 1rem;
+  border-top: 0.2rem solid var(--dark-grey);
+  border-right: 0.2rem solid var(--dark-grey);
+  transform: rotate(135deg);
 }
 
 .select__wrapper {
@@ -488,16 +520,25 @@ select {
 
 .calendar {
   font-size: 1.5rem;
-  padding: 1.5rem 1rem 1.5rem 1rem;
+  padding: 1.4rem 1rem 1.5rem 1rem;
   background: inherit;
   color: var(--dark-grey);
-  -webkit-appearance: none;
-     -moz-appearance: none;
-          appearance: none;
   border: 0.8px solid #AFB0B9;
   border-radius: 6px;
   width: 100%;
   cursor: pointer;
+}
+
+.calendar::-moz-placeholder {
+  color: var(--dark-grey);
+}
+
+.calendar::placeholder {
+  color: var(--dark-grey);
+}
+
+[type=date]::-webkit-calendar-picker-indicator {
+  opacity: 0;
 }
 
 form button {
@@ -508,6 +549,7 @@ form button {
   font-size: 17px;
 }
 
+/* --------------------- info --------------------- */
 .info__container {
   max-width: 124rem;
   margin: 0 auto;
@@ -575,6 +617,7 @@ form button {
   width: 100%;
 }
 
+/* --------------------- Featured destinations --------------------- */
 .featured__wrapper {
   position: relative;
 }
@@ -622,32 +665,32 @@ form button {
   left: 7rem;
 }
 
-.featured-Destinations__wrapper {
+.featured-destinations__wrapper {
   display: grid;
   grid-template-columns: 1fr 1fr 1fr 1fr;
   gap: 2.5rem;
   margin-top: 5.6rem;
 }
 @media screen and (max-width: 624px) {
-  .featured-Destinations__wrapper {
+  .featured-destinations__wrapper {
     grid-template-columns: 1fr 1fr;
   }
 }
 @media screen and (max-width: 375px) {
-  .featured-Destinations__wrapper {
+  .featured-destinations__wrapper {
     grid-template-columns: 1fr;
   }
 }
 
-.featured-Destinations__item {
+.featured-destinations__item {
   position: relative;
 }
 
-.featured-Destinations__item img {
+.featured-destinations__item img {
   width: 100%;
 }
 
-.featured-Destinations__item__title {
+.featured-destinations__item__title {
   position: absolute;
   bottom: 0;
   left: 0;
@@ -660,24 +703,25 @@ form button {
   flex-direction: column;
 }
 
-.featured-Destinations__item img {
+.featured-destinations__item img {
   border-radius: 1rem;
 }
 
-.featured-Destinations__item__title h5 {
+.featured-destinations__item__title h5 {
   font-weight: 600;
   font-size: 1.5rem;
   line-height: 2.5rem;
   color: #042521;
 }
 
-.featured-Destinations__item__title p {
+.featured-destinations__item__title p {
   font-weight: 500;
   font-size: 1.5rem;
   line-height: 2.4rem;
   color: #80918E;
 }
 
+/* --------------------- Testimonials --------------------- */
 .testimonials__wrapper {
   margin-top: 25rem;
   position: relative;
@@ -855,6 +899,7 @@ form button {
   border-color: #000000;
 }
 
+/* --------------------- stories --------------------- */
 .stories__wrapper {
   margin-top: 27rem;
   position: relative;
@@ -952,6 +997,7 @@ form button {
   color: var(--orange);
 }
 
+/* --------------------- footer --------------------- */
 .wrapper__bg {
   background-color: #F9F9FB;
 }
@@ -1057,4 +1103,12 @@ form button {
   .social__wrapper {
     padding-bottom: 2rem;
   }
+}
+
+.social__wrapper svg * {
+  fill: black;
+}
+
+.social__wrapper svg:hover * {
+  fill: var(--green);
 }/*# sourceMappingURL=style.css.map */

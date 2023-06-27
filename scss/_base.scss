@@ -1,9 +1,10 @@
+/* --------------------- base --------------------- */
+
 html {
     font-family: "Inter", "Playfair Display", "Mulish", sans-serif;
     font-size: 62.5%;
   }
       
-    
   body {
     background-color: var(--white);
     font-family: "Inter";
@@ -23,7 +24,6 @@ html {
   --dark-grey:#4A4C53;
   --grey:#AFB0B9;
   --grey-light:#B8BECD;
-  --green-grad:
   }
   
   a {
@@ -38,7 +38,7 @@ html {
     border: 1px solid var(--orange);
     color: var(--white);
     font-weight: 500;
-    font-size: 1.5rem;
+    font-size: 1.5rem;    
   }
   
   .btn:hover {

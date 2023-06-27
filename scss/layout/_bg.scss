@@ -2,7 +2,7 @@
     position: absolute;
     border-radius: 50%;
     background: var(--white);
-
+    
     @include ms-block {
       display: none;
     }
@@ -28,6 +28,7 @@
     position: absolute;
     border-radius: 50%;
     background: var(--white);
+    
     @include ms-block {
       display: none;
     }

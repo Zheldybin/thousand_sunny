@@ -1,3 +1,5 @@
+/* --------------------- footer --------------------- */
+
 .wrapper__bg {
     background-color:  #F9F9FB;
   }
@@ -93,4 +95,12 @@
     @include ss-block {
       padding-bottom: 2rem;
     }
+  }
+
+  .social__wrapper svg * {
+    fill: black;
+  }
+
+  .social__wrapper svg:hover * {
+    fill: var(--green);
   }
